@@ -2,10 +2,12 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
+import db.DbConnection;
 
 public class Registration {
 
     public static void main(String[] args) {
+        DbConnection.connectDB();
         MyFrame frame=new MyFrame();
     }
 }
@@ -110,4 +112,4 @@ class MyFrame extends JFrame{
         setVisible(true);
 
     }
- }
+}
